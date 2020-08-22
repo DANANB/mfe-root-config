@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
+    "start": "node server.js",
+    "start:dev": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
     "lint": "eslint src --ext js",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write \"./**\"",
@@ -39,6 +40,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "single-spa": "^5.3.1"
   }
 }
