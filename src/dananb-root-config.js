@@ -15,7 +15,7 @@ registerApplication({
 registerApplication({
   name: "@dananb/view-todos",
   app: () => System.import("@dananb/view-todos"),
-  activeWhen: ["/", "/todos"],
+  activeWhen: ["/todos"],
 });
 
 registerApplication({
